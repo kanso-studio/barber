@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kne8 - Premium Barbershop</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome za ikonice -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-info">
+                <span><i class="fas fa-phone"></i> +381 11 123 4567</span>
+                <span><i class="fas fa-envelope"></i> info@bar8.rs</span>
+            </div>
+            <div>
+                <span><i class="fas fa-clock"></i> Pon - Sub: 09:00 - 20:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGACIJA -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-cut"></i> Bar8
+            </a>
+            <nav class="nav-links">
+                <a href="#home" class="active">Početna</a>
+                <a href="#about">O nama</a>
+                <a href="#services">Usluge</a>
+                <a href="#pricing">Cenovnik</a>
+                <a href="#team">Tim</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+            <div class="nav-actions">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <a href="#booking" class="btn btn-gold">Zakažite termin</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SEKCIJA -->
+    <section id="home" class="hero">
+        <div class="container reveal">
+            <div class="hero-content">
+                <span class="hero-tag">Vrhunsko iskustvo negovanja</span>
+                <h1>Više od šišanja. Vaš lični potpis.</h1>
+                <p>Iskusite precizne šišanje i vrhunsko negovanje prilagođeno vašem stilu. Naš tim stručnjaka posvećen je tome da izgledate i osećate se najbolje.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-gold">Istražite usluge</a>
+                    <a href="#about" class="btn btn-outline">Saznaj više</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="avatars">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Klijent">
+                        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Klijent">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Klijent">
+                    </div>
+                    <div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="margin:0; font-size: 0.85rem;">4.9/5 - Preko 2000 zadovoljnih klijenata</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- O NAMA -->
+    <section id="about" class="section-padding">
+        <div class="container about-grid reveal">
+            <div class="about-images">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Berberin u akciji" class="main-img">
+                <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Detalji" class="sub-img">
+            </div>
+            <div>
+                <span class="section-subtitle">O Nama</span>
+                <h2 class="section-title">Iskusite precizno šišanje i vrhunsko negovanje prilagođeno vašem stilu</h2>
+                <p class="text-muted">U svetu Bar8, verujemo da je dobar izgled vaša najbolja podsetnica. Naši iskusni berberi kombinuju tradicionalne tehnike sa modernim trendovima kako bi vam pružili jedinstveno iskustvo.</p>
+
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
+                        <div class="feature-text">
+                            <h4>Vrhunski majstori</h4>
+                            <p class="text-muted">Naš tim čine sertifikovani profesionalci sa godinama iskustva u muškom šišanju i brijanju.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-spa"></i></div>
+                        <div class="feature-text">
+                            <h4>Luksuzno iskustvo</h4>
+                            <p class="text-muted">Uživajte u opuštajućoj atmosferi, vrhunskim proizvodima i pažljivo osmišljenim tretmanima.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                        <div class="feature-text">
+                            <h4>Čist i higijenski studio</h4>
+                            <p class="text-muted">Strogo se pridržavamo najviših standarda higijene kako bi vaša poseta bila potpuno bezbedna.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <a href="#services" class="btn btn-gold">Saznaj više</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- USLUGE -->
+    <section id="services" class="section-padding services-section">
+        <div class="container reveal">
+            <div class="section-header">
+                <div>
+                    <span class="section-subtitle">Naše Usluge</span>
+                    <h2 class="section-title">Profesionalno šišanje i negovanje za svaki stil</h2>
+                </div>
+                <a href="#" class="btn btn-outline">Sve usluge</a>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-cut icon"></i>
+                    <h3>Klasično šišanje</h3>
+                    <p>Precizno šišanje makazama i mašinicom, prilagođeno obliku vašeg lica i ličnom stilu.</p>
+                    <a href="#booking" class="service-link">Zakaži <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card user-beard">
+                    <img src="beard-svgrepo-com.svg" alt="">
+                    <h3>Negovanje brade</h3>
+                    <p>Oblikovanje brade, tradicionalno brijanje toplim peškirima i tretmani za negu kože.</p>
+                    <a href="#booking" class="service-link">Zakaži <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shower icon"></i>
+                    <h3>Pranje i stilizovanje</h3>
+                    <p>Pranje kose, masaža temena i profesionalno stilizovanje uz vrhunske preparate.</p>
+                    <a href="#booking" class="service-link">Zakaži <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ZAŠTO IZABRATI NAS -->
+    <section class="section-padding">
+        <div class="container why-us-grid reveal">
+            <div>
+                <span class="section-subtitle">Zašto Izabrati Nas</span>
+                <h2 class="section-title">Ekspertska izrada, vrhunska nega i moderno negovanje</h2>
+                <p class="text-muted" style="margin-bottom: 30px;">Ne pružamo samo uslugu šišanja. Pružamo iskustvo koje će vas ostaviti osveženim, samopouzdanim i spremnim za nove izazove.</p>
+
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-medal"></i></div>
+                        <div class="feature-text">
+                            <h4>Vrhunski majstori</h4>
+                            <p class="text-muted">Strast prema zanatu i posvećenost detaljima nas izdvajaju od ostalih.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-pump-soap"></i></div>
+                        <div class="feature-text">
+                            <h4>Vrhunski proizvodi za negu</h4>
+                            <p class="text-muted">Koristimo isključivo premium brendove koji štite i neguju vašu kosu i kožu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circular-image">
+                <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zadovoljan klijent">
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO SEKCIJA -->
+    <section class="video-section">
+        <!-- Stock video sa Mixkit (besplatan) -->
+        <video class="video-bg" autoplay muted loop playsinline>
+            <source src="https://www.pexels.com/download/video/5450149/" type="video/mp4">
+            Vaš pretraživač ne podržava video tag.
+        </video>
+        <div class="video-content reveal">
+            <h2>Zakoračite u naš studio i doživite vrhunsko brijanje</h2>
+            <p>PON - SUB: 09:00 - 20:00 | NED: ZATVORENO</p>
+        </div>
+    </section>
+
+    <!-- CENOVNIK -->
+    <section id="pricing" class="section-padding">
+        <div class="container reveal">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span class="section-subtitle">Cenovnik</span>
+                <h2 class="section-title">Ekskluzivni paketi negovanja za svaki stil života</h2>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-icon"><i class="fas fa-cut"></i></div>
+                    <div class="pricing-info">
+                        <h4>Klasično šišanje</h4>
+                        <p>Šišanje mašinicom i makazama, pranje i stilizovanje.</p>
+                    </div>
+                    <div class="pricing-price">2.000 RSD</div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-icon"><i class="fas fa-crown"></i></div>
+                    <div class="pricing-info">
+                        <h4>Bar8 Signature</h4>
+                        <p>Premium šišanje, brijanje, masaža lica i topli peškiri.</p>
+                    </div>
+                    <div class="pricing-price">3.500 RSD</div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-icon"><i class="fas fa-user"></i></div>
+                    <div class="pricing-info">
+                        <h4>Brijanje glave</h4>
+                        <p>Tradicionalno brijanje glave britvom i nega temena.</p>
+                    </div>
+                    <div class="pricing-price">1.500 RSD</div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-icon"><i class="fas fa-user-check"></i></div>
+                    <div class="pricing-info">
+                        <h4>Luksuzno negovanje brade</h4>
+                        <p>Oblikovanje, brijanje ivica, ulja i balzami.</p>
+                    </div>
+                    <div class="pricing-price">1.800 RSD</div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-icon"><i class="fas fa-magic"></i></div>
+                    <div class="pricing-info">
+                        <h4>Uklanjanje dlačica voskom</h4>
+                        <p>Uklanjanje dlačica iz nosa i ušiju (topli vosak).</p>
+                    </div>
+                    <div class="pricing-price">800 RSD</div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-icon"><i class="fas fa-spa"></i></div>
+                    <div class="pricing-info">
+                        <h4>Nega lica</h4>
+                        <p>Dubinsko čišćenje, piling i hidratantna maska.</p>
+                    </div>
+                    <div class="pricing-price">3.000 RSD</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ZAKAZIVANJE -->
+    <section id="booking" class="booking-section">
+        <div class="container booking-grid reveal">
+            <div class="booking-text">
+                <h2>Vaša savršena frizura počinje jednostavnim zakazivanjem</h2>
+                <p>Popunite formu i osigurajte svoj termin. Naš tim će vam se javiti u najkraćem roku kako bi potvrdio vaš dolazak.</p>
+
+                <div class="contact-info-small">
+                    <div>
+                        <i class="fas fa-phone-alt"></i> +381 11 123 4567
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i> info@bar8.rs
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-form">
+                <h3>Zakažite termin</h3>
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Vaše Ime" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Vaše Prezime" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Adresa" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Broj Telefona" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Poruka / Željena usluga i vreme"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold" style="width: 100%;">Pošalji Zahtev</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIJA -->
+    <section class="section-padding">
+        <div class="container reveal">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span class="section-subtitle">Galerija</span>
+                <h2 class="section-title">Pogledajte preciznost, stil i umeće iza svakog reza</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1647140655214-e4a2d914971f?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Šišanje"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Brijanje"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Studio"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Detalji"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- TESTIMONIALS -->
+    <section class="section-padding testimonials-section">
+        <div class="container reveal">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span class="section-subtitle">Utisci</span>
+                <h2 class="section-title">Prave priče klijenata koji veruju našim ekspertima</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"Najbolje iskustvo šišanja koje sam imao. Posvećenost detaljima i prijatna atmosfera čine ovaj salon posebnim. Sve preporuke!"</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Klijent">
+                        <div>
+                            <h5>Miloš Jovanović</h5>
+                            <span>Redovan klijent</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"Uvek izađem sa savršeno oblikovanom bradom. Momci znaju šta rade i koriste vrhunske proizvode. Vredi svakog dinara."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Klijent">
+                        <div>
+                            <h5>Nikola Petrović</h5>
+                            <span>Klijent</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"Profesionalizam na najvišem nivou. Odlična lokacija, ljubazno osoblje i vrhunski rezultati. Moje omiljeno mesto za opuštanje."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Klijent">
+                        <div>
+                            <h5>Stefan Ilić</h5>
+                            <span>Redovan klijent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIM -->
+    <section id="team" class="section-padding">
+        <div class="container reveal">
+            <div class="section-header">
+                <div>
+                    <span class="section-subtitle">Naš Tim</span>
+                    <h2 class="section-title">Strastveni stručnjaci za negovanje sa preciznošću i stilom</h2>
+                </div>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1598524374912-6b0b0bab43dd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Miloš J.">
+                    <div class="team-info">
+                        <h4>Miloš Janković</h4>
+                        <span>Glavni Berberin</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1582893561942-d61adcb2e534?q=80&w=691&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Vladimir S.">
+                    <div class="team-info">
+                        <h4>Vladimir Simić</h4>
+                        <span>Ekspert za bradu</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1593702295094-aea22597af65?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Marko N.">
+                    <div class="team-info">
+                        <h4>Marko Nikolić</h4>
+                        <span>Stilista</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding services-section">
+        <div class="container faq-grid reveal">
+            <div class="faq-image">
+                <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Berberin">
+            </div>
+            <div>
+                <span class="section-subtitle">Često Postavljana Pitanja</span>
+                <h2 class="section-title" style="margin-bottom: 30px;">Vaša pitanja, odgovorena od strane naših eksperata</h2>
+
+                <details class="faq-item" open>
+                    <summary>Da li je potrebno da zakažem termin unapred?</summary>
+                    <div class="faq-content">
+                        <p>Preporučujemo zakazivanje termina kako biste izbegli čekanje, posebno vikendom. Možete nas pozvati ili popuniti formu na sajtu.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Koliko traje standardno šišanje?</summary>
+                    <div class="faq-content">
+                        <p>Standardno šišanje obično traje između 20 i 30 minuta, u zavisnosti od dužine kose i željenog stila.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Koje brendove proizvoda koristite?</summary>
+                    <div class="faq-content">
+                        <p>Koristimo isključivo premium svetske brendove specijalizovane za mušku negu, koji su blagi prema koži i efikasni.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Koje metode plaćanja prihvatate?</summary>
+                    <div class="faq-content">
+                        <p>Prihvatamo gotovinu, platne kartice (Visa, Mastercard, Dina) kao i plaćanje putem mobilnog bankarstva.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-cut"></i> Bar8
+                    </div>
+                    <p>Vaš vrhunski cilj za muško šišanje, brijanje i negu. Tradicija susreće moderan stil na jednom mestu.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Brzi Linkovi</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Početna</a></li>
+                        <li><a href="#about">O nama</a></li>
+                        <li><a href="#services">Usluge</a></li>
+                        <li><a href="#pricing">Cenovnik</a></li>
+                        <li><a href="#team">Naš Tim</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Naše Usluge</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Klasično šišanje</a></li>
+                        <li><a href="#services">Brijanje brade</a></li>
+                        <li><a href="#services">Nega lica</a></li>
+                        <li><a href="#services">Pranje kose</a></li>
+                        <li><a href="#services">Spa tretmani</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Kontakt Informacije</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kneza Mihaila 15, Beograd, Srbija</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+381 11 123 4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@bar8.rs</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Pon - Sub: 09:00 - 20:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bar8 Barbershop. Sva prava zadržana. Dizajnirao sa strašću.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT ZA ANIMACIJE -->
+    <script src="script.js"></script>
+</body>
+</html>
