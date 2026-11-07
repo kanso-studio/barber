@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // --- HAMBURGER MENI LOGIKA ---
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.getElementById('navLinks');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
