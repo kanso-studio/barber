@@ -19,6 +19,7 @@
 }
 
 html {
+                overflow-x: hidden; /* Sprečava horizontalni skrol */
     scroll-behavior: smooth;
 }
 
@@ -28,6 +29,7 @@ body {
     color: var(--text-light);
     line-height: 1.6;
     overflow-x: hidden;
+               max-width: 100vw; /* Ograničava širinu na ekran */
 }
 
 a {
@@ -1103,32 +1105,30 @@ footer {
                }
 
                .nav-links {
-                   position: fixed;
-                   top: 0;
-                   right: -100%;
-                   width: 70%;
-                   max-width: 300px;
-                   height: 100vh;
-                   background-color: var(--bg-card);
-                   display: flex !important; /* Osigurava da se linkovi vide */
-                   flex-direction: column;
-                   justify-content: center;
-                   align-items: center;
-                   transition: right 0.4s ease-in-out;
-                   z-index: 1001;
-                   border-left: 1px solid #333;
-                   box-shadow: -10px 0 30px rgba(0,0,0,0.5);
-                   gap: 30px;
-               }
+                              position: fixed;
+                              top: 0;
+                              right: 0; /* Pomeramo na desnu ivicu */
+                              width: 70%;
+                              max-width: 300px;
+                              height: 100vh;
+                              background-color: var(--bg-card);
+                              display: flex !important;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                              /* OVO JE KLJUČNO: Koristimo transformaciju umesto right: -100% */
+                              transform: translateX(100%);
+                              transition: transform 0.4s ease-in-out;
+                              z-index: 1001;
+                              border-left: 1px solid #333;
+                              box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+                              gap: 30px;
+                          }
 
-               .nav-links.active {
-                   right: 0;
-               }
-
-               .nav-links a {
-                   font-size: 1.2rem;
-                   color: var(--text-light);
-               }
+                          .nav-links.active {
+                              /* Kada je aktivno, vraćamo ga na 0 */
+                              transform: translateX(0);
+                          }
 }
 
 @media (max-width: 768px) {
