@@ -17,3 +17,20 @@ document.addEventListener("DOMContentLoaded", function() {
         revealOnScroll.observe(reveal);
     });
 });
+
+// --- HAMBURGER MENI LOGIKA ---
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// Zatvori meni kada se klikne na link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});

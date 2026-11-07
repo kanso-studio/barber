@@ -1050,6 +1050,37 @@ footer {
     font-size: 0.85rem;
 }
 
+/* --- HAMBURGER MENI --- */
+     .hamburger {
+         display: none;
+         flex-direction: column;
+         gap: 6px;
+         cursor: pointer;
+         z-index: 1002;
+     }
+
+     .hamburger span {
+         display: block;
+         width: 28px;
+         height: 2px;
+         background-color: var(--text-light);
+         transition: var(--transition);
+     }
+
+     /* Animacija hamburgera u X */
+     .hamburger.active span:nth-child(1) {
+         transform: translateY(8px) rotate(45deg);
+         background-color: var(--gold);
+     }
+     .hamburger.active span:nth-child(2) {
+         opacity: 0;
+     }
+     .hamburger.active span:nth-child(3) {
+         transform: translateY(-8px) rotate(-45deg);
+         background-color: var(--gold);
+     }
+
+
 /* --- RESPONSIVE --- */
 @media (max-width: 992px) {
     .hero h1 { font-size: 3rem; }
@@ -1061,10 +1092,46 @@ footer {
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .working-hours-card { display: none; }
     .nav-links { display: none; } /* Dodati hamburger meni za pravi projekat */
+    .hamburger {
+                    display: flex;
+                }
+
+                .nav-actions .btn {
+                    display: none; /* Sakrij dugme za zakazivanje na malim ekranima */
+                }
+
+                .nav-links {
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
+                    width: 70%;
+                    max-width: 300px;
+                    height: 100vh;
+                    background-color: var(--bg-card);
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: right 0.4s ease-in-out;
+                    z-index: 1001;
+                    border-left: 1px solid #333;
+                    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+                    gap: 40px;
+                }
+
+                .nav-links.active {
+                    right: 0;
+                }
+
+                .nav-links a {
+                    font-size: 1.2rem;
+                }
 }
 
 @media (max-width: 768px) {
     .hero h1 { font-size: 2.5rem; }
+    .nav-actions{
+        display: none;
+    }
     .section-title { font-size: 2rem; }
     .services-grid, .products-grid, .testimonials-grid, .team-grid, .blog-grid, .footer-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
